@@ -47,7 +47,7 @@ for i in range(len(images_urls)):
 	max_index = np.argmax(areas)
 	cnt=contours[max_index]
 
-	# Draw a bounding box around the largest contour representing the object to be cropped.
+	## Draw a bounding box around the largest contour representing the object to be cropped.
 	x,y,w,h = cv2.boundingRect(cnt)
 	cv2.rectangle(original,(x,y),(x+w,y+h),(0,255,0),2)
 	cv2.imshow("Cropping result",original)
