@@ -42,7 +42,7 @@ for i in range(len(images_urls)):
 	x_min=min(cord[:,1])-5
 	x_max=max(cord[:,1])+5
 
-	#Drawing the bounding box around the object
+	##Drawing the bounding box around the object
 	cv2.rectangle(original,(x_min,y_min),(x_max,y_max),(0,255,0),2)
 	cv2.imshow("Cropping result",original)
 	cv2.waitKey()
